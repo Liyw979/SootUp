@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://soot-oss.github.io/SootUp/develop/bodyinterceptors/">
+        <link rel="canonical" href="https://soot-oss.github.io/SootUp/develop/examples/">
       
       
-        <link rel="prev" href="../jimple-values/">
+        <link rel="prev" href="../analysisinput/">
       
       
-        <link rel="next" href="../typehierarchy/">
+        <link rel="next" href="../jimple/">
       
       
       <link rel="icon" href="../img/icon.svg">
@@ -22,7 +22,7 @@
     
     
       
-        <title>BodyInterceptors - </title>
+        <title>Examples - </title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#body-interceptors" class="md-skip">
+        <a href="#sootup-example-projects" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BodyInterceptors
+              Examples
             
           </span>
         </div>
@@ -228,8 +228,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -239,11 +241,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
@@ -257,7 +259,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -331,10 +333,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../examples/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -343,6 +354,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -511,8 +523,6 @@
       
   
   
-    
-  
   
   
     
@@ -524,11 +534,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -542,7 +552,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Advanced Topics
@@ -553,30 +563,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    BodyInterceptors
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../bodyinterceptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,98 +575,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#localsplitter" class="md-nav__link">
-    <span class="md-ellipsis">
-      LocalSplitter
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#localpacker" class="md-nav__link">
-    <span class="md-ellipsis">
-      LocalPacker
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#traptightener" class="md-nav__link">
-    <span class="md-ellipsis">
-      TrapTightener
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#emptyswitcheliminator" class="md-nav__link">
-    <span class="md-ellipsis">
-      EmptySwitchEliminator
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unreachablecodeeliminator" class="md-nav__link">
-    <span class="md-ellipsis">
-      UnreachableCodeEliminator
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#copypropagator" class="md-nav__link">
-    <span class="md-ellipsis">
-      CopyPropagator
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#localnamestandardizer" class="md-nav__link">
-    <span class="md-ellipsis">
-      LocalNameStandardizer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#staticsingleassignmentformer" class="md-nav__link">
-    <span class="md-ellipsis">
-      StaticSingleAssignmentFormer
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1034,86 +932,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#localsplitter" class="md-nav__link">
-    <span class="md-ellipsis">
-      LocalSplitter
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#localpacker" class="md-nav__link">
-    <span class="md-ellipsis">
-      LocalPacker
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#traptightener" class="md-nav__link">
-    <span class="md-ellipsis">
-      TrapTightener
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#emptyswitcheliminator" class="md-nav__link">
-    <span class="md-ellipsis">
-      EmptySwitchEliminator
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unreachablecodeeliminator" class="md-nav__link">
-    <span class="md-ellipsis">
-      UnreachableCodeEliminator
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#copypropagator" class="md-nav__link">
-    <span class="md-ellipsis">
-      CopyPropagator
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#localnamestandardizer" class="md-nav__link">
-    <span class="md-ellipsis">
-      LocalNameStandardizer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#staticsingleassignmentformer" class="md-nav__link">
-    <span class="md-ellipsis">
-      StaticSingleAssignmentFormer
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1130,167 +948,95 @@
   
 
 
-<h1 id="body-interceptors">Body Interceptors</h1>
-<p>BodyInterceptors are applied to each <code>Body</code> <em>now by default, if not overridden in the used AnalysisInputLocations</em>.
-The BodyInterceptors exist to to improve and normalize the raw Jimple that was generated in an earlier step.
-The "raw" generated Jimple from the Bytecodefrontend needs a lot improvements - deficits of raw Jimple are:</p>
+<h1 id="sootup-example-projects">SootUp Example projects</h1>
+<p>Some examples that use SootUp to get insights about a Java program.</p>
 <ul>
-<li>Java Variables with that are compiled to the same Local index, but from different scopes inside the method are mapped to the same Local. The Localsplitter takes care of splitting these Locals that are semantically different, into two seperate Local instances. </li>
-<li>The Conversion from a stack-machine to a register-machine creates leftover assignments - handled/inlined/removed by the Aggregator, CopyPropagator. They inline unnecessary Assignments.</li>
-<li>As the previous BodyTransformers could optimize code that leads to unused assignments etc - The DeadAssignmentEliminator keeps the StmtGraph clean from unused/dead Assignments.</li>
-<li>The Locals we get from the Java bytecode are typically untyped. Therefore we have to augment the Local types which is done by the TypeAssigner.</li>
-<li>t.b.c.</li>
-</ul>
-<p>Optimizations (method scope)</p>
-<ul>
-<li>ConditionalBranchFolder: removes tautologic ifs that are always true/false - if we can determine it in the scope of the method.</li>
-<li>EmptySwitchEliminator: removes switches that are not really switching</li>
-<li>ConstantPropagatorAndFolder: calculates constant values before runtime</li>
-<li>CastAndReturnInliner: Removes merging flows to a single return</li>
-<li>UnreachableCodeEliminator: speaks for itself.</li>
-<li>TrapTightener</li>
-</ul>
-<p>Standardize Jimple appearance</p>
-<ul>
-<li>LocalNameStandardizer: numbers Locals with the scheme: type-initial + number of type occurence </li>
+<li>Basic setup <a href="https://github.com/soot-oss/SootUp-Examples/blob/main/BasicSetupExample/src/main/java/sootup/examples/BasicSetup.java">Example</a></li>
+<li>Configure a BodyInterceptor <a href="https://github.com/soot-oss/SootUp-Examples/blob/main/BodyInterceptorExample/src/main/java/sootup/examples/BodyInterceptor.java">Example</a></li>
+<li>CallGraph <a href="https://github.com/soot-oss/SootUp-Examples/blob/main/CallgraphExample/src/main/java/sootup/examples/CallgraphExample.java">Example</a></li>
+<li>Class Hierarchy Algoritm <a href="https://github.com/soot-oss/SootUp-Examples/blob/main/ClassHierarchyExample/src/main/java/sootup/examples/ClassHierarchy.java">Example</a></li>
+<li>Replace a SootMethod of a SootClass <a href="https://github.com/soot-oss/SootUp-Examples/blob/main/MutatingSootClassExample/src/main/java/sootup/examples/MutatingSootClass.java">Example</a></li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">Soot Equivalent</p>
-<p><a href="https://github.com/soot-oss/soot/blob/develop/src/main/java/soot/BodyTransformer.java">BodyTransformer</a></p>
+<p class="admonition-title">Download</p>
+<p>The Examples can be cloned or downloaded from our <a href="https://github.com/soot-oss/SootUp-Examples.git">Example Repository</a>.</p>
 </div>
-<h2 id="localsplitter">LocalSplitter</h2>
-<p>LocalSplitter is a<code>BodyInterceptor</code>that attempts to identify and separate uses of a local variable (as definition) that are independent of each other by renaming local variables.</p>
-<p>Example 1: </p>
-<p><img alt="LocalSplitter Example_1" src="../assets/figures/LocalSplitter%20Example_1.png" /></p>
-<p>As shown in the example above, the local variable<code>l1</code>is defined twice. It can be split up into two new local variables: <code>l1#1</code> and <code>l1#2</code> because the both definitions are independent of each other. </p>
-<p>Look for foldable navigation and tabs for showing old vs new</p>
-<p>Example 2:</p>
-<p><img alt="LocalSplitter Example_2" src="../assets/figures/LocalSplitter%20Example_2.png" /></p>
-<p>In the second example, the local variable<code>l2</code>is defined thrice. But it cannot be split up into three new local variables as in the first example, because its definitions in the if-branches are not independent of each other. Therefore, it can only be split up into two local variables as shown in the figure.</p>
-<h2 id="localpacker">LocalPacker</h2>
-<p>LocalPacker is a<code>BodyInterceptor</code>that attempts to minimize the number of local variables which are used in body by reusing them, when it is possible. It corresponds to the inverse body transformation of LocalSplitter. Note: Every local variable's type should be assigned before running LocalPacker.</p>
-<p>Example:</p>
-<p><img alt="LocalPacker Example" src="../assets/figures/LocalPacker%20Example.png" /></p>
-<p>In the given example above, the local variables<code>l1</code>,<code>l3</code>are summarized to be one local variable<code>l1</code>, because they have the same type without interference with each other. Likewise, the local variables<code>l2</code>,<code>l4</code>and<code>l5</code>are summarized to be another local variable<code>l2</code>. Although the local variable<code>l0</code>doesn't interfere any other local variables, it cannot be summed up with other local variables because of its distinctive type.</p>
-<h2 id="traptightener">TrapTightener</h2>
-<p><strong>WIP - currently not available!</strong></p>
-<p>TrapTightener is a<code>BodyInterceptor</code>that shrinks the protected area covered by each Trap in a Body. </p>
-<p>Example:</p>
-<p><img alt="TrapTightener Example" src="../assets/figures/TrapTightener%20Example.png" /></p>
-<p>We assume in the example above that only the<code>Stmt</code>:<code>l2 := 2</code>might throw an exception caught by the<code>Trap</code>which is labeled with<code>label3</code>. In the jimple body before running the TrapTightener, the protected area covered by the Trap contains three<code>Stmts</code>:<code>l1 := 1; l2 := 2; l2 := 3</code>. But an exception could only arise at the<code>Stmt</code>:<code>l2 := 2</code>. After the implementation of TrapTightener, we will get a contractible protected area which contains only the<code>Stmt</code>that might throw an exception, namely the<code>Stmt</code>:<code>l2 := 2</code>.</p>
-<h2 id="emptyswitcheliminator">EmptySwitchEliminator</h2>
-<p>EmptySwitchEliminator is a<code>BodyInterceptor</code>that removes empty switch statements which contain only the default case.</p>
-<p>Example: </p>
-<p><img alt="EmptySwitchEliminator Example" src="../assets/figures/EmptySwitchEliminator%20Example.png" /></p>
-<p>As shown in the example above, the switch statement in the jimple body always takes the default action. After running EmptySwitchEliminator, the switch statement is replaced with a<code>GotoStmt</code>to the default case.</p>
-<h2 id="unreachablecodeeliminator">UnreachableCodeEliminator</h2>
-<p>UnreachableCodeEliminator is a<code>BodyInterceptor</code>that removes all unreachable statements.</p>
-<p>Example: </p>
-<p><img alt="UnreachableCodeEliminator Example" src="../assets/figures/UnreachableCodeEliminator%20Example.png" /></p>
-<p>Obviously, the code segment<code>l2 = 2; l3 = 3;</code>is unreachable. It will be removed after running the UreachableCodeEliminator.</p>
-<h2 id="copypropagator">CopyPropagator</h2>
-<p>CopyPropagator is a <code>BodyInterceptor</code> that supports copy propagation and constant propagation.</p>
-<div class="admonition abstract">
-<p class="admonition-title">CopyPropagator</p>
-<p>"Definition 3[Copy Propagation]: The use of a variable y in the statement z=x+y occurring at a point
-p can be replaced by a variable w if every path from the entry node to point p contains the same
-definition y=w, for the variable y, and after the definition prior to reaching p, there is no redefinition to
-the variable y and no redefinition to the variable w."</p>
-<p><a href="https://arxiv.org/pdf/2207.03894">Sreekala, S. K. and Vineeth Kumar Paleri. “Copy Propagation subsumes Constant Propagation.” ArXiv abs/2207.03894 (2022): n. pag.</a></p>
-</div>
-<p>Example for global copy propagation:</p>
-<p><img alt="UnreachableCodeEliminator Example" src="../assets/figures/CopyPropagator%20Example_1.png" /></p>
-<p>Consider a code segment in the following form: </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>a = b;
-...
-c = use(a); // a, b, c are local variables
-</code></pre></div></td></tr></table></div>
-<p>According to the copy propagation's definition, the statement<code>c = use(a)</code>can be replaced with<code>c = use(b)</code>iff both conditions are met: </p>
-<ul>
-<li><code>a</code>is defined only one time on all the paths from<code>a = b</code>to<code>c = use(a)</code>.</li>
-<li>There are no definitions of<code>b</code>on any path from<code>a = b</code>to<code>c = use(a)</code>.</li>
-</ul>
-<p>In the example for global copy propagation, the first used<code>l1</code>is replaced with<code>l0</code>, but the second used<code>l1</code>cannot be replaced with<code>l3</code>, because the second condition is not satisfied.</p>
-<p>Example for constant propagation:</p>
-<p><img alt="CopyPropagator Example_1" src="../assets/figures/CopyPropagator%20Example_2.png" /></p>
-<p>Constant propagation is similar to copy propagation. Consider a code segment in the following form:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>a = const;
-...
-b = use(a); // a, b are local variables, const is a constant
-</code></pre></div></td></tr></table></div>
-<p>After perfoming the constant propagation, the statement<code>b = use(a)</code>can be replaced with<code>b = use(const)</code>iff<code>a</code>is not redefined on any of the paths from<code>a = const</code>to<code>b = use(a)</code>.</p>
-<p>Therefore, the first used<code>l1</code>in the second example can be replaced with the constant<code>1</code>, but the second used<code>l1</code>cannot be replaced with the constant<code>2</code>, because<code>l1</code>is redefined on the path from<code>l1 = 2</code>to<code>l4 = use(l1)</code>.  However, it can be replaced with local variable<code>l2</code>, because the both conditions of copy propagation are met. </p>
-<h2 id="localnamestandardizer">LocalNameStandardizer</h2>
-<p>LocalNameStandardizer is a<code>BodyInterceptor</code>that assigns a generic name to each local variable. Firstly, it will sort the local variables' order alphabetically by the string representation of their type. If there are two local variables with the same type, then the LocalNameStandardizer will use the sequence of their occurrence in jimple body to determine their order.  Each assigned name consists of two parts:</p>
-<ul>
-<li>A letter to imply the local variable's type</li>
-<li>A digit to imply the local variable's order</li>
-</ul>
-<p>The following table shows the letter corresponding to each type:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Type of Local Variable</th>
-<th style="text-align: center;">Letter</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">boolean</td>
-<td style="text-align: center;">z</td>
-</tr>
-<tr>
-<td style="text-align: center;">byte</td>
-<td style="text-align: center;">b</td>
-</tr>
-<tr>
-<td style="text-align: center;">short</td>
-<td style="text-align: center;">s</td>
-</tr>
-<tr>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">i</td>
-</tr>
-<tr>
-<td style="text-align: center;">long</td>
-<td style="text-align: center;">l</td>
-</tr>
-<tr>
-<td style="text-align: center;">float</td>
-<td style="text-align: center;">f</td>
-</tr>
-<tr>
-<td style="text-align: center;">double</td>
-<td style="text-align: center;">d</td>
-</tr>
-<tr>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">c</td>
-</tr>
-<tr>
-<td style="text-align: center;">null</td>
-<td style="text-align: center;">n</td>
-</tr>
-<tr>
-<td style="text-align: center;">unknown</td>
-<td style="text-align: center;">e</td>
-</tr>
-<tr>
-<td style="text-align: center;">reference</td>
-<td style="text-align: center;">r</td>
-</tr>
-</tbody>
-</table>
-<h2 id="staticsingleassignmentformer">StaticSingleAssignmentFormer</h2>
-<p>StaticSingleAssignmentFormer is a<code>BodyInterceptor</code>that transforms jimple body into SSA form, so that each local variable is assigned exactly once and defined before its first use.</p>
-<p>Example:</p>
-<p><img alt="SSA Example_1" src="../assets/figures/SSA%20Example_1.png" /></p>
-<p><img alt="SSA Example_2" src="../assets/figures/SSA%20Example_2.png" /></p>
-<p>In the given example, the StaticSingleAssignmentFormer assigns each<code>IdentityStmt</code>and<code>AssignStmt</code>to a new local variable . And each use uses the local variable which is most recently defined. Sometimes, it is impossible to determine the most recently defined local variable for a use in a join block. In this case, the StaticSingleAssignmentFormer will insert a<code>PhiStmt</code>in the front of the join block to merge all most recently defined local variables and assign them a new local variable.</p>
+<!--
+We have included all the five projects in 5 different branches under SootUp-Examples with detailed explanation about the project.
+
+### BasicSetupExample
+1. package sootup.examples; - defines the package name for the Java class.
+2. import statement - defines various classes and interfaces from different packages that the program uses.
+3. public class BasicSetup - declares a public class named 'BasicSetup' which is the main class for this program.
+4. Then we have created a main method which is the entry point of the progrram
+5. Path pathToBinary object pointing to a directory that contains the binary files ie class files to be analyzed and Paths.get is a static method that converts string path to a 'Path' object.
+6. AnalysisInputLocation object specifying where SootUp should look for classes to analyze.
+7. View object is created for the project allowing the retrieal of classes from the specified input location. JavaView is specific implementation of View tailed for Java projects.
+8. The ClassType object is created for the class name 'HelloWorld'. This object represents the type of class to be analyzed.
+9. A MethodSignature object is created for the main method of the HelloWorld class. This signature specifies the method's return type (void) and its parameter types (a single parameter of type String[]).
+10. The if statment checks for the presences of the class 'HelloWorld'. If not it prints "Class not ffound!" and exits the program.
+11. Then it retrieves the SootClass object representing the HelloWorld class, assuming it is present.
+12. view.getMethod(methodSignature); - Attempts to retrieve the specified method from the project.
+13. The if statment after this, checks if the main method is present in the HelloWorld class. If not, it prints "Method not found!" and exits.
+14. Then the next statment retrieves the SootMethod object for the main method and prints its body, which is in Jimple, a simplified version of Java bytecode used by Soot for analysis and transformation.
+15. Then the next if condition checks if the method containts a specific statement called 'Hello World!'.
+
+### BodyInterceptor
+1. package sootup.examples; - defines the package name for the Java class.
+2. import statement - defines various classes and interfaces from different packages that the program uses.
+3. public class BodyInterceptor - declares a public class named "BodyInterceptor".
+4. Then we have created a main method in which is the entry point for the code.
+5. Then we have created an AnalysisInputLocation pointing to a directory with class files to be loaded. It specifies that the DeadAssignmentEliminator interceptor should be applied to these classes.
+6. Then created a View that initializes a JavaView with the specified inputLocation, allowing interaction with the classes for analysis.
+7. Then have created a ClassType and MethodSignature which is used for analysis. The signature contains method name, return type and parameters.
+8.  Then we check for the existence of the class and method in the given view.
+9. If they exist, a SootClass and SootMethod objects are used to retrieve the same.
+10. Then prints the body of the SootMethod object.
+11. Then we check if the interceptor worked.  ie here we check if the DeadAssignmentEliminator interceptor has successfully removed a specific assignment (l1 = 3. from the method's body. It does this by looking through all statements (JAssignStmt) in the method body and checking if the assignment is not                     present.
+12. Then it prints the result of the interceptor check.
+
+
+### CallGraphExample
+1. package sootup.examples; - defines the package name for the Java class.
+2. import statement - defines various classes and interfaces from different packages that the program uses.
+3. public class CallgraphExample  - declares a public class named "CallGraphExample".
+4. Then we have created a main method in which is the entry point for the code.
+5. List<AnalysisInputLocation> inputLocations creates a list of AnalysisInputLocation objects. These specify where Soot should look for Java class files for analysis.
+6. Then we have provided towo inputLocations.add() - one for the project's class file directory and another for Java's runtime library (rt.jar).
+7. Then we have created a JavaView which is used for analysing the Java program.
+8. Then we have created two ClassType for two classes ie 'A' and 'B'. They are used to create a MethodSignature for a method that will be analysed.
+9. ViewTypeHierarchy  - then we have set up a type hierarchy from the provided view and prints the subclasses of class 'A'.
+10. Initializes a CallGraphAlgorithm using the ClassHierarchyAnalysisAlgorithm, which is a method for constructing call graphs.
+11. Then we creates a call graph by initialising the Class Hierarchy Analysis (cha) with the entry method signature.
+12. Prints information about calls from the entry method in the call graph.
+
+### ClassHierarchyExample
+1. package sootup.examples; - defines the package name for the Java class.
+2. import statement - defines various classes and interfaces from different packages that the program uses.
+3. public class ClassHierarchy - declares a public class named "ClassHierarchy".
+4. Then we have created a main method in which is the entry point for the code.
+5. Then creates a list of AnalysisInputLocation objects. These specify where Soot should look for Java class files for analysis. Two locations are added: one for the project's binary directory and another for the default Java runtime library (rt.jar).
+6. Initializes a JavaView object with the previously created input locations.
+7. Initializes a ViewTypeHierarchy object using the view. This object will be used to analyze the class hierarchy.
+8. Then we have created two ClassTypes. These lines get JavaClassType objects for classes "A" and "C". These types are used for further hierarchy analysis.
+9. Checks the direct subclasses of class "C". It verifies if all direct subclasses are "D" using two different methods: comparing class names and fully qualified names.
+10. Then prints a message based on whether all direct subtypes of "C" are correctly identified as "D".
+11. Retrieves and checks the superclasses of class "C". It then verifies if these superclasses include class "A" and java.lang.Object, printing a message based on the result.
+
+### MutatingSootClassExample
+1. package sootup.examples; - defines the package name for the Java class.
+2. import statement - defines various classes and interfaces from different packages that the program uses.
+3. public class MutatingSootClass - declares a public class named "MutatingSootClass".
+4. Then we have created a main method in which is the entry point for the code.
+5. First we have created an 'AnalysisInputLocation' which points to a directory which contains the class files to be analysed.
+6. Then we have created a JavaView which allos us to retrievet the classes.
+7. And also created a ClassType to get the class 'HelloWorld' and a method within that class ie main for analysis using MethodSignature.
+8. THen we are checking and retrieving the class and method.
+9. Then we retrives the existing body of the method and prints it. Then we create a new local variable to add it copy to the method body.
+10. Then we are overriding the method body and class. ie this lines creates new sources that overrides teh original method body and class. It replaces the old method in the class with the new method having the modified body.
+11. Prints the modified method body and checks if the new local variable (newLocal) exists in the modified method. Depending on the result, it prints a corresponding message.
+
+-->
 
 
 
