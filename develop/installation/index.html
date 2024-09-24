@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../img/icon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -1094,7 +1094,17 @@ You can import fewer modules if your use case allows it.</p>
 <span class="normal">44</span>
 <span class="normal">45</span>
 <span class="normal">46</span>
-<span class="normal">47</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;dependencies&gt;
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;dependencies&gt;
     &lt;dependency&gt;
         &lt;groupId&gt;org.soot-oss&lt;/groupId&gt;
         &lt;artifactId&gt;sootup.core&lt;/artifactId&gt;
@@ -1107,17 +1117,22 @@ You can import fewer modules if your use case allows it.</p>
     &lt;/dependency&gt;
     &lt;dependency&gt;
         &lt;groupId&gt;org.soot-oss&lt;/groupId&gt;
-        &lt;artifactId&gt;sootup.java.sourcecode&lt;/artifactId&gt;
+        &lt;artifactId&gt;sootup.java.sourcecode.frontend&lt;/artifactId&gt;
         &lt;version&gt;&lt;/version&gt;
     &lt;/dependency&gt;
     &lt;dependency&gt;
         &lt;groupId&gt;org.soot-oss&lt;/groupId&gt;
-        &lt;artifactId&gt;sootup.java.bytecode&lt;/artifactId&gt;
+        &lt;artifactId&gt;sootup.java.bytecode.frontend&lt;/artifactId&gt;
         &lt;version&gt;&lt;/version&gt;
     &lt;/dependency&gt;
     &lt;dependency&gt;
         &lt;groupId&gt;org.soot-oss&lt;/groupId&gt;
-        &lt;artifactId&gt;sootup.jimple.parser&lt;/artifactId&gt;
+        &lt;artifactId&gt;sootup.jimple.frontend&lt;/artifactId&gt;
+        &lt;version&gt;&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.soot-oss&lt;/groupId&gt;
+        &lt;artifactId&gt;sootup.apk.frontend&lt;/artifactId&gt;
         &lt;version&gt;&lt;/version&gt;
     &lt;/dependency&gt;
     &lt;dependency&gt;
@@ -1127,7 +1142,12 @@ You can import fewer modules if your use case allows it.</p>
     &lt;/dependency&gt;
     &lt;dependency&gt;
         &lt;groupId&gt;org.soot-oss&lt;/groupId&gt;
-        &lt;artifactId&gt;sootup.analysis&lt;/artifactId&gt;
+        &lt;artifactId&gt;sootup.analysis.intraprocedural&lt;/artifactId&gt;
+        &lt;version&gt;&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.soot-oss&lt;/groupId&gt;
+        &lt;artifactId&gt;sootup.analysis.interprocedural&lt;/artifactId&gt;
         &lt;version&gt;&lt;/version&gt;
     &lt;/dependency&gt;
     &lt;dependency&gt;
@@ -1157,18 +1177,22 @@ You can import fewer modules if your use case allows it.</p>
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">repositories</span><span class="w"> </span><span class="o">{</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">repositories</span><span class="w"> </span><span class="o">{</span>
 <span class="w">    </span><span class="n">mavenCentral</span><span class="o">()</span>
 <span class="w">    </span><span class="n">google</span><span class="o">()</span>
 <span class="o">}</span>
 
 <span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.core:&quot;</span>
 <span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.java.core:&quot;</span>
-<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.java.sourcecode:&quot;</span>
-<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.java.bytecode:&quot;</span>
-<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.jimple.parser:&quot;</span>
+<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.java.sourcecode.frontend:&quot;</span>
+<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.java.bytecode.frontend:&quot;</span>
+<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.jimple.frontend:&quot;</span>
+<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.apk.frontend:&quot;</span>
 <span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.callgraph:&quot;</span>
-<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.analysis:&quot;</span>
+<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.analysis.intraprocedural:&quot;</span>
+<span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.analysis.interprocedural:&quot;</span>
 <span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.qilin:&quot;</span>
 <span class="n">compile</span><span class="w"> </span><span class="s2">&quot;org.soot-oss:sootup.codepropertygraph:&quot;</span>
 </code></pre></div></td></tr></table></div>
@@ -1266,7 +1290,7 @@ mvn<span class="w"> </span>install
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
