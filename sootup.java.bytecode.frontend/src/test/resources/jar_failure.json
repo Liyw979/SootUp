@@ -1,0 +1,8 @@
+[
+{
+  "jar_name": "lombok-ext-0.0.4.jar",
+  "exception": "Failed to apply sootup.interceptors.NopEliminator@736d7894 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>",
+  "download_url": "https://repo1.maven.org/maven2/org/chobit/apt/lombok-ext/0.0.4/lombok-ext-0.0.4.jar",
+  "failedMethodSignature": "<com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>"
+}
+]
