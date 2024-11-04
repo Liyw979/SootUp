@@ -1,0 +1,8 @@
+[
+{
+  "jar_name": "server-0.2.3.jar",
+  "exception": "Failed to apply sootup.interceptors.NopEliminator@381fbf44 to <com.lightningkite.ktorbatteries.typed.AutoformKt: void insideHtmlForm(kotlinx.html.FORM,java.lang.String,java.lang.String,java.lang.Object,boolean)>",
+  "download_url": "https://repo1.maven.org/maven2/com/lightningkite/ktorbatteries/server/0.2.3/server-0.2.3.jar",
+  "failedMethodSignature": "<com.lightningkite.ktorbatteries.typed.AutoformKt: void insideHtmlForm(kotlinx.html.FORM,java.lang.String,java.lang.String,java.lang.Object,boolean)>"
+}
+]
