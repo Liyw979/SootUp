@@ -1,0 +1,8 @@
+[
+{
+  "jar_name": "graylog2-shared-1.3.4.jar",
+  "exception": "Failed to apply sootup.interceptors.NopEliminator@d13ba95 to <org.graylog2.shared.system.stats.SigarService: void <init>()>",
+  "download_url": "https://repo1.maven.org/maven2/org/graylog2/graylog2-shared/1.3.4/graylog2-shared-1.3.4.jar",
+  "failedMethodSignature": "<org.graylog2.shared.system.stats.SigarService: void <init>()>"
+}
+]
