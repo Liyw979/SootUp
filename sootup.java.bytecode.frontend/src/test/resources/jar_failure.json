@@ -1,0 +1,8 @@
+[
+{
+  "jar_name": "ui-text-desktop-1.8.0-alpha01.jar",
+  "exception": "Failed to apply sootup.interceptors.NopEliminator@364178de to <androidx.compose.ui.text.platform.ReflectionUtil: java.lang.reflect.Field findFieldInHierarchy(java.lang.Class,java.util.function.Predicate)>",
+  "download_url": "https://repo1.maven.org/maven2/org/jetbrains/compose/ui/ui-text-desktop/1.8.0-alpha01/ui-text-desktop-1.8.0-alpha01.jar",
+  "failedMethodSignature": "<androidx.compose.ui.text.platform.ReflectionUtil: java.lang.reflect.Field findFieldInHierarchy(java.lang.Class,java.util.function.Predicate)>"
+}
+]
