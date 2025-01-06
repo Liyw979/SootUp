@@ -1,0 +1,8 @@
+[
+{
+  "jar_name": "newa-all-0.1.10.jar",
+  "exception": "Failed to apply sootup.interceptors.NopEliminator@61615749 to <io.netty.util.internal.NativeLibraryLoader: void loadLibrary(java.lang.ClassLoader,java.lang.String,boolean)>",
+  "download_url": "https://repo1.maven.org/maven2/io/github/green4j/newa-all/0.1.10/newa-all-0.1.10.jar",
+  "failedMethodSignature": "<io.netty.util.internal.NativeLibraryLoader: void loadLibrary(java.lang.ClassLoader,java.lang.String,boolean)>"
+}
+]
