@@ -1,41 +1,20 @@
 package sootup.java.bytecode.frontend.inputlocation;
 
 import categories.TestCategories;
-import java.nio.file.Paths;
-import java.util.Collections;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import sootup.core.inputlocation.AnalysisInputLocation;
-import sootup.core.model.Body;
-import sootup.core.model.SourceType;
-import sootup.interceptors.NopEliminator;
-import sootup.jimple.frontend.JimpleAnalysisInputLocation;
-import sootup.jimple.frontend.JimpleView;
+import sootup.java.core.views.JavaView;
 
 @Tag(TestCategories.JAVA_8_CATEGORY)
 public class FixJars extends BaseFixJarsTest {
 
-  @Test
-  /* Isolated testcase from:
-   * String jarDownloadUrl = "https://repo1.maven.org/maven2/io/github/adven27/exam-core/2024.0.10/exam-core-2024.0.10.jar";
-   * String methodSignature = "<io.github.adven27.concordion.extensions.exam.core.logger.LoggingFormatterExtension$LoggingFormatterListener: void afterExample(org.concordion.api.listener.ExampleEvent)>";
-   */
-  public void executeexamcorejar() {
-    AnalysisInputLocation inputLocation =
-        new JimpleAnalysisInputLocation(
-            Paths.get("./src/test/resources/"),
-            SourceType.Application,
-            Collections.singletonList(new NopEliminator()));
-    JimpleView jimpleView = new JimpleView(inputLocation);
-    jimpleView
-        .getClasses()
-        .forEach(
-            sootClass -> {
-              Body body =
-                  sootClass.getMethodsByName("nopEliminatorBug").stream()
-                      .findFirst()
-                      .get()
-                      .getBody();
-            });
-  }
+@Test
+public void executejtranscgenasjar(){
+	String jarDownloadUrl = "https://repo1.maven.org/maven2/com/jtransc/jtransc-gen-as3/0.6.8/jtransc-gen-as3-0.6.8.jar";
+    String methodSignature = "<com.jtransc.gen.as3.As3Generator: void writeClasses(com.jtransc.vfs.SyncVfsFile)>";
+    JavaView javaView = supplyJavaView(jarDownloadUrl);
+    assertMethodConversion(javaView,methodSignature);
+    assertJar(javaView);
+}
+
 }

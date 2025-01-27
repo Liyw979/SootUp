@@ -1,0 +1,8 @@
+[
+{
+  "jar_name": "jtransc-gen-as3-0.6.8.jar",
+  "exception": "Failed to apply sootup.interceptors.LocalSplitter@1e9d5d79 to <com.jtransc.gen.as3.As3Generator: void writeClasses(com.jtransc.vfs.SyncVfsFile)>",
+  "download_url": "https://repo1.maven.org/maven2/com/jtransc/jtransc-gen-as3/0.6.8/jtransc-gen-as3-0.6.8.jar",
+  "failedMethodSignature": "<com.jtransc.gen.as3.As3Generator: void writeClasses(com.jtransc.vfs.SyncVfsFile)>"
+}
+]
