@@ -1,0 +1,8 @@
+[
+{
+  "jar_name": "squeryl_2.9.1-0.9.6-RC2.jar",
+  "exception": "Failed to convert <org.squeryl.Session: java.lang.Object withinTransaction(scala.Function0)>",
+  "download_url": "https://repo1.maven.org/maven2/org/squeryl/squeryl_2.9.1/0.9.6-RC2/squeryl_2.9.1-0.9.6-RC2.jar",
+  "failedMethodSignature": "<org.squeryl.Session: java.lang.Object withinTransaction(scala.Function0)>"
+}
+]
